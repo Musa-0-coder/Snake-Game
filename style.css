@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  background: url(img/bg.jpg);
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#scoreBox {
+  position: absolute;
+  top: 10px;
+  right: 150px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Handjet", sans-serif;
+}
+#hiscoreBox {
+  position: absolute;
+  top: 60px;
+  right: 110px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Handjet", sans-serif;
+  padding-top: 30px;
+}
+
+#board {
+  background: linear-gradient(rgb(150, 231, 150), rgb(228, 228, 130));
+  height: 92vmin;
+  width: 80vmin;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+  background: linear-gradient(rgb(247, 100, 100), rgb(232, 232, 115));
+  border: 0.25vmin solid purple;
+  transform: scale(1.09);
+  border-radius: 12px;
+}
+
+.snake {
+  background-color: purple;
+  border: 0.25vmin solid white;
+  border-radius: 12px;
+}
+
+.food {
+  background: linear-gradient(red, rgb(108, 247, 108));
+  border: 0.25vmin solid black;
+  border-radius: 7px;
+}
